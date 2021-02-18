@@ -1,0 +1,20 @@
+schema {
+	query: Upit
+	mutation: Upravljanje
+}
+
+type Upravljanje {
+	dodajKorisnika(ime: String!, prezime: String!,telefon:Int):Korisnik
+}
+
+type Upit {
+	korisnici(ime: String): [Korisnik]
+}
+
+type Korisnik {
+  ime: String!
+  prezime: String!
+  telefon: Int
+}
+
+
